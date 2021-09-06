@@ -9,7 +9,7 @@ namespace HealthyGarden.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("It's running =D !!");
+            return Ok("It's running =D !! Culpa do Gustavo");
         }
     }
 }
