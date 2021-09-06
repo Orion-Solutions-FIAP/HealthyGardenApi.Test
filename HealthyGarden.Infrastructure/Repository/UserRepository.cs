@@ -59,7 +59,7 @@ namespace HealthyGarden.Infrastructure.Repository
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                return connection.QueryFirstOrDefault<int>("SELECT dbo.CONTA_LINHAS('user')", commandType: CommandType.Text);
+                return connection.QueryFirstOrDefault<int>("SELECT dbo.Fn_HG_ContaLinhas('user')", commandType: CommandType.Text);
             }
         }
     }
